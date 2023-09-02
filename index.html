@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="hamburger-menu" onclick="toggleMenu(this)">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <header>Technical Documentation</header>
+      <a
+        class="nav-link"
+        href="#HTML_and_CSS"
+        onclick="smoothScroll('HTML_and_CSS')"
+        >HTML and CSS</a
+      >
+      <a
+        class="nav-link"
+        href="#Responsive_Web_Design"
+        onclick="smoothScroll('Responsive_Web_Design')"
+        >Responsive Web Design</a
+      >
+      <a
+        class="nav-link"
+        href="#JavaScript_and_Java"
+        onclick="smoothScroll('JavaScript_and_Java')"
+        >JavaScript and Java</a
+      >
+      <a
+        class="nav-link"
+        href="#Version_Control"
+        onclick="smoothScroll('Version_Control')"
+        >Version Control</a
+      >
+      <a
+        class="nav-link"
+        href="#API_Documentation"
+        onclick="smoothScroll('API_Documentation')"
+        >API Documentation</a
+      >
+      <!-- Add more navigation links as needed -->
+    </nav>
+
+    <main id="main-doc">
+      <section id="HTML_and_CSS" class="main-section">
+        <header>HTML and CSS</header>
+        <p>HTML stands for Hypertext Markup Language...</p>
+        <p>CSS stands for Cascading Style Sheets...</p>
+        <code>&lt;html&gt;&lt;/html&gt;</code>
+        <code>&lt;head&gt;&lt;/head&gt;</code>
+        <code>&lt;body&gt;&lt;/body&gt;</code>
+        <ul>
+          <li>HTML Elements</li>
+          <li>CSS Styles</li>
+          <li>Block vs. Inline Elements</li>
+          <li>Selectors</li>
+          <li>Box Model</li>
+        </ul>
+      </section>
+
+      <section id="Responsive_Web_Design" class="main-section">
+        <header>Responsive Web Design</header>
+        <p>Responsive web design is an approach to designing...</p>
+        <p>Media queries are CSS rules that allow you to...</p>
+        <code
+          >@media screen and (max-width: 768px) { /* Media query rules */
+          }</code
+        >
+        <code
+          >&lt;meta name="viewport" content="width=device-width,
+          initial-scale=1"&gt;</code
+        >
+        <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>
+        <ul>
+          <li>Media Queries</li>
+          <li>Flexible Layouts</li>
+          <li>Breakpoints</li>
+          <li>Mobile-First Design</li>
+          <li>Viewport Meta Tag</li>
+        </ul>
+      </section>
+
+      <section id="JavaScript_and_Java" class="main-section">
+        <header>JavaScript and Java</header>
+        <p>JavaScript is a programming language commonly used...</p>
+        <p>Java, on the other hand, is a high-level programming...</p>
+        <code>var x = 5;</code>
+        <code>System.out.println("Hello, World!");</code>
+        <code
+          >document.getElementById("demo").innerHTML = "Hello, World!";</code
+        >
+        <ul>
+          <li>Variables</li>
+          <li>Functions</li>
+          <li>Data Types</li>
+          <li>Classes and Objects</li>
+          <li>Inheritance</li>
+        </ul>
+      </section>
+
+      <section id="Version_Control" class="main-section">
+        <header>Version Control</header>
+        <p>Version control is a system that allows you to track...</p>
+        <p>Git is a popular version control system that enables...</p>
+        <code>git init</code>
+        <code>git add .</code>
+        <code>git commit -m "Initial commit"</code>
+        <ul>
+          <li>Git Basics</li>
+          <li>Branching</li>
+          <li>Merging</li>
+          <li>Conflict Resolution</li>
+          <li>Pull Requests</li>
+        </ul>
+      </section>
+
+      <section id="API_Documentation" class="main-section">
+        <header>API Documentation</header>
+        <p>API documentation provides information about how...</p>
+        <p>Endpoints are specific URLs or URIs that represent...</p>
+        <code>GET /api/users</code>
+        <code>POST /api/posts</code>
+        <code>DELETE /api/users/:id</code>
+        <ul>
+          <li>Endpoints</li>
+          <li>Request Parameters</li>
+          <li>Response Formats</li>
+          <li>Error Handling</li>
+          <li>Authentication</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
